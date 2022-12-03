@@ -1,0 +1,16 @@
+.menu {
+	&__body {
+      display: flex;
+			flex-direction: row;
+			background-color: rgba(255, 255, 255, 0.95);
+      padding-right: 100px;
+       
+	}
+	&__list {
+      list-style-type: none;   
+	}
+	&__link {
+		font-size: 25px;
+		color: #000;
+	}
+}

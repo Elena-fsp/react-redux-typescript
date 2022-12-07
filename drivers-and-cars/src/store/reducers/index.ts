@@ -1,10 +1,11 @@
 import {combineReducers} from "redux";
-import { driverReducer } from "./driverReducer";
+import { driverReducer} from "./driverReducer";
 
 
 
 export const rootReducer = combineReducers({
-    driver: driverReducer,
+    drivers: driverReducer,
+ 
    
 })
 

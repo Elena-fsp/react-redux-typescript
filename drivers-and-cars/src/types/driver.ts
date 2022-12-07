@@ -56,12 +56,12 @@ type DriverStatus = Active | Blocked | Fired | NotActive
 
 export enum EColumsDrivers {
   ID = 'id',
-  NAME = 'name',
-  LAST_NAME = 'last_name',
-  DATE_BIRTH = 'date_birth',
-  DATE_CREATED = 'date_created',
-  STATUS = 'status',
-  ACTIONS = 'actions'
+  NAME = 'Имя',
+  LAST_NAME = 'Фамилия',
+  DATE_BIRTH = 'День Рождения',
+  DATE_CREATED = 'Дата создания',
+  STATUS = 'Статус',
+  ACTIONS = 'Действия'
 }
 export type Colums = {
   field:EColumsDrivers

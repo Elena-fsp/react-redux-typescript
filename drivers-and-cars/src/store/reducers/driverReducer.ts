@@ -9,11 +9,11 @@ const initialState: DriversState = {
 export const driverReducer = (state = initialState, action: DriverAction): DriversState => {
     switch (action.type) {
         case DriversActionTypes.FETCH_DRIVERS:
-            return {loading: true, error: null, drivers: []}
+            return {...state, loading: true, error: null, drivers: []}
         case DriversActionTypes.FETCH_DRIVERS_SUCCESS:
-            return {loading: false, error: null, drivers: action.payload}
+            return {...state, loading: false, error: null, drivers: action.payload}
         case DriversActionTypes.FETCH_DRIVERS_ERROR:
-            return {loading: false, error: action.payload, drivers: []}
+            return {...state, loading: false, error: action.payload, drivers: []}
         default:
             return state
     }

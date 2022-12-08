@@ -1,4 +1,14 @@
-import { FC } from "react"
+import { FC } from "react";
+import DriversList from "./DriversPage";
 
-export const MainPage: FC = () => <div>Main page</div>
+export const MainPage: FC = () => {
+  return (
+    <div>
+    
+   <DriversList />
+   
+    
+    </div>
+   );
+}
 

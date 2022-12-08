@@ -7,9 +7,8 @@ import { navigation } from './navigation';
 
 export const Router = () => (
   <Routes>
-    <Route path={navigation.main.path} element={<DriversList/>} />
+    <Route path={navigation.main.path} element={<MainPage/>} />
     <Route path={navigation.cars.path} element={<CarsPage/>} />
-    <Route path={navigation.drivers.path} element={<MainPage/>} />
     <Route path={navigation.redirect.path} element={<ErrorPage/>} />
   </Routes>
 )
